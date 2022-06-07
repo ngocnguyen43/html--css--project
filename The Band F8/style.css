@@ -1,0 +1,357 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 500;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-weight: 500; */
+}
+.header__nev{
+    height: 5vh;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    position: fixed;
+    top: 0;
+
+}
+.header__nev > div{
+    /* width: 7.5%; */
+    height: 100%;
+    color: #fff;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 24px;
+    cursor: pointer;
+    
+}
+
+.header__nev  div:not(.header__nev__search):hover{
+    color: #000;
+    background-color: #ccc;
+}
+.header__nev__search:hover{
+    background-color: #FF0000;
+}
+ion-icon{
+    font-size: 24px;
+}
+.header__nev h3{    
+    font-weight: 500;
+}
+.header__nev__search{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.header__nev__more{
+    position: relative;
+}
+.header__nev__more:hover div {
+    background-color: #fff;
+    display: block;
+    
+}
+
+.header__nev__more div{
+    width: 120%;
+    height: 100%;
+    display: none;
+    left: 0;
+    
+}
+.subnav{
+    position: absolute;
+    top: 38px;
+}
+.subnav div > *{
+    padding: 9px  ;
+}
+.subnav div:hover{
+    background-color: #ccc;
+}
+.header__slide{
+    margin-top: 5vh;
+    padding-top: 50%;
+    background: url('./Assests/chicago.jpg') top center / cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: -1;
+}
+.header__slide h2 + .header__slide p{
+    font-weight: 500;
+}
+.header__silde__text{
+    color: white;
+    position: absolute;    
+    bottom: 5vh;
+}
+.text__heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2vh;
+    font-size: 16px;
+}
+.text__description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+h2{
+    font-weight: 100;
+}
+p{
+    font-weight: bold;
+}
+
+.content__about{
+    width: 800px;
+    height: 90vh;
+    background-color: #fff;
+    padding: 64px 0;
+    margin-left: auto;
+    margin-right: auto;
+    /* font-weight: ; */
+}
+.content__about__name{
+    text-align: center;
+    font-weight: 500;
+}
+.content__about__favour{
+    text-align: center;
+    margin: 15px;
+    font-style: italic;
+    opacity: 0.6;
+    font-weight: 500;
+}
+.content__about__description{
+    text-align: justify; 
+    line-height: 1.5;
+    font-size: 15px;
+    font-weight: 500;
+}
+.image__wrap img{
+    max-width: 150px;
+    border-radius: 5px;
+}
+.content__about__image__wrap{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+
+.image__wrap h4{
+    text-align: center;
+    margin: 0 0 15px;
+    font-weight: 500;
+}
+
+
+.content__tour{
+    width: 100vw;
+    height: 120vh;
+    background-color: #000;
+}
+
+.content__tour__box{
+    width: 800px;
+    height: 600px;
+    display: block;
+    margin: 0 auto;
+}
+.content__tour__box__date{
+    width: 100%;
+    height: 120px;
+    background-color: #fff;
+    /* z-index: -1; */
+
+}
+.content__tour__box__date__month{
+    width: 100%;
+    height: calc(120px / 3);
+    border:  1px solid #ddd;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+}
+.date{
+    opacity: 0.6;
+
+}
+.left{
+    justify-content: space-between;
+}
+
+.infomation{
+    width: 9.5%;
+    height: 60%;
+    background-color: #FF0000;
+    margin-left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.book__left{
+    width: 3%;
+    height: 60%;
+    background-color: #000;
+    border-radius: 50%;
+    color: #fff;
+    margin-right: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content__tour__box__image{
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+.content__tour__box__place{
+    width: 240px;
+    height: 400px;
+    background-color: #fff;
+
+}
+.content__tour__box__place img{
+    width: 100%;
+    object-fit: cover;
+}
+.content__tour__box__place img:hover{
+    opacity: 0.6;
+}
+.content__tour__infomation> *{
+    padding: 10px  15px ;
+}
+.place{
+    font-style: bold;
+}
+.time{
+    font-weight: 500;
+    opacity: 0.6;
+}
+.buy{
+    height: 7.5%;
+    width: 40%;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.buy:hover{
+    background-color: #ddd;
+    color: #000;
+}
+.description{
+    font-weight: 500;
+}
+.footer__img{
+    margin-top: 5vh;
+    padding-top: 50%;
+    background: url('./Assests/map.jpg') top center / cover no-repeat;
+}
+.footer__link{
+    width: 100vw;
+    height: 30vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content__contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact__box{
+    width: 900px;
+    height: 50vh;
+    background-color: #fff;
+
+}
+.contact__header p{
+    /* display: block;
+    margin: 0 auto; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    margin: 25px;
+}
+.contact__header p:first-child{
+    font-weight: bold;
+    font-size: 32px;
+    letter-spacing: 3px;
+    font-weight: 500;
+}
+.contact__header p:last-child{
+    font-size: 16px;
+    font-style: italic;
+    opacity: 0.6;
+}
+.wrap{
+    font-size: 14px;
+    margin-right: 25px;
+    font-weight: 500;
+}
+ion-icon{
+    margin-right: 15px;
+}
+.wrapped{
+    display: flex;
+    margin: 25px 25px;
+    justify-content: space-between;
+}
+/* .input__wrap{
+    position: relative;
+} */
+
+.input__wrap input:not(.message){
+    height: 36px;
+    font-size: 16px;
+    width: 200px;
+    margin-left: 10px;
+}
+.message{
+    width: 415px;
+    margin-top: 10px;
+    height: 36px;
+    margin-left: 10px;
+    font-size: 16px;
+
+}
+.sending{
+    height: 40px;
+    width: 60px;
+    background-color: #000;
+    color: #fff;
+    margin-top: 10px;
+
+    margin-left:400px ;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+.contact__content__adress .wrap{
+    display: flex;
+}
+.footer__link ion-icon{
+    cursor: pointer;
+}
